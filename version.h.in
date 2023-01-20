@@ -1,0 +1,3 @@
+//@@引用的变量可以通过CMakeLists.txt来设置 
+#define VERSION_MAJOR @multimedia_VERSION_MAJOR@ 
+#define VERSION_MINOR @multimedia_VERSION_MINOR@ 

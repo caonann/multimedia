@@ -1,0 +1,11 @@
+build/
+third_party/ffmpeg
+CMakeFiles/
+tmp/
+cmake_install.cmake
+CMakeCache.txt
+Makefile
+.vscode/
+.idea/
+cmake-build*/
+.cache
