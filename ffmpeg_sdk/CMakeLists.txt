@@ -1,5 +1,5 @@
 include(${PROJECT_SOURCE_DIR}/third_party/ffmpeg.cmake)
 add_executable(decode_opus2pcm decode_opus2pcm.cc)
 add_dependencies(decode_opus2pcm ffmpeg-4.4)
-target_include_directories(decode_opus2pcm PUBLIC "${PROJECT_BINARY_DIR}")
-target_link_libraries(decode_opus2pcm avdevice avfilter avformat avcodec avutil swresample pthread dl)
+target_include_directories(decode_opus2pcm PUBLIC "${PROJECT_BINARY_DIR}" "${PROJECT_SOURCE_DIR}")
+target_link_libraries(decode_opus2pcm PRIVATE avdevice avfilter avformat avcodec avutil swresample pthread dl)
